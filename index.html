@@ -3,77 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Materialize CSS -->
+    <title>Robin Frouin - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navbar -->
     <nav>
-        <div class="nav-wrapper teal">
-            <a href="#" class="brand-logo center">My Portfolio</a>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Robin Frouin</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-
-    <!-- Hero Section -->
+    
     <div class="container">
-        <div class="row">
-            <div class="col s12 center-align">
-                <h2>Hi, I'm [Your Name]</h2>
-                <p>I'm a passionate [Your Profession] who loves building web experiences.</p>
-                <a class="waves-effect waves-light btn-large teal darken-3">View My Work</a>
+        <div class="row center-align">
+            <div class="col s12">
+                <img src="profile.jpg" alt="Robin Frouin" class="circle responsive-img" width="150">
+                <h2>Robin Frouin</h2>
+                <h5>Developer Student | C# | Unity | C++ | Unreal Engine</h5>
+                <p>Passionate about game development, technology, and interactive experiences.</p>
             </div>
         </div>
     </div>
-
-    <!-- About Section -->
+    
     <div id="about" class="container">
         <h3>About Me</h3>
-        <p>I am a web developer with experience in HTML, CSS, JavaScript, and Materialize.</p>
+        <p>As a video game development student, I've always been eager to understand what goes into creating a video game. Now that I have the knowledge, I'm ready to go further and join the industry that has fueled my passion throughout my life.</p>
     </div>
-
-    <!-- Projects Section -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <h4 id="modal-title"></h4>
+            <p id="modal-description"></p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-close btn">Close</button>
+        </div>
+    </div>
+    
     <div id="projects" class="container">
-        <h3>Projects</h3>
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="project1.jpg">
-                        <span class="card-title">Project 1</span>
-                    </div>
-                    <div class="card-content">
-                        <p>A brief description of this awesome project.</p>
-                    </div>
+        <div class="projects-header">
+            <h3>My Projects So Far</h3>
+            <ul class="tabs row" id="filter">
+                <li class="tab col s3"><a href="" data-filter="recent">Most Recent</a></li>
+                <li class="tab col s3"><a href="" data-filter="oldest">Oldest</a></li>
+                <li class="tab col s3"><a href="" data-filter="shortest">Shortest Duration</a></li>
+                <li class="tab col s3"><a href="" data-filter="longest">Longest Duration</a></li>
+            </ul>
+        </div>
+    
+        <div class="projects-container row">
+            <div class="card project-card" data-project="project1" data-start="2023-05-01" data-end="2023-09-30" data-duration="5" data-proud="2">
+                <div class="card-content">
+                    <span class="card-title">Top-down Video Game</span>
+                    <p class="project-dates">From: 2023-05-01 to 2023-09-30</p>
+                    <p class="project-duration">Duration: 5 months</p>
+                </div>
+            </div>
+    
+            <div class="card project-card" data-project="project2" data-start="2022-01-15" data-end="2022-07-30" data-duration="6" data-proud="1">
+                <div class="card-content">
+                    <span class="card-title">3D Platformer</span>
+                    <p class="project-dates">From: 2022-01-15 to 2022-07-30</p>
+                    <p class="project-duration">Duration: 6 months</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Contact Section -->
+    
     <div id="contact" class="container">
         <h3>Contact Me</h3>
-        <form>
-            <div class="input-field">
-                <input type="text" id="name">
-                <label for="name">Your Name</label>
-            </div>
-            <div class="input-field">
-                <input type="email" id="email">
-                <label for="email">Your Email</label>
-            </div>
-            <button class="btn waves-effect waves-light teal darken-3" type="submit">Send</button>
-        </form>
+        <p>Email: robin.frouin04@gmail.com</p>
+        <p>LinkedIn: <a href="#">Frouin Robin</a></p>
     </div>
 
-    <!-- Materialize JavaScript -->
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
 </body>

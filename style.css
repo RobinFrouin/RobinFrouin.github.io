@@ -1,11 +1,151 @@
+/* Updated style.css to match CV style */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #f5f5f5;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
     margin-top: 50px;
 }
 
+nav {
+    background-color: #d4af37;
+}
+
+.nav-wrapper .brand-logo {
+    font-weight: bold;
+}
+
+h3 {
+    color: #d4af37;
+}
+
+.btn {
+    background-color: #d4af37;
+}
+
+#filter {
+    background-color: #1e1e2e !important;
+    text-align: center;
+}
+
+/* Default tab styles */
+.tabs .tab a {
+    color: #ffffff !important; /* White text */
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.tabs .tab a:hover {
+    color: #d4af37 !important; /* Gold on hover */
+}
+
+/* Active tab (clicked and released) */
+.tabs .tab a:focus, 
+.tabs .tab a.active {
+    color: #d4af37 !important; /* Gold for active tab */
+    background-color: #d4af3713 !important; /* Transparent gold */
+    border-bottom: 3px solid #d4af37 !important; /* Proper border */
+}
+
+
+
+/* Card Styles */
 .card {
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: #2c2c3a;
+    color: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card-title{
+    background-color: #1e1e2e;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.card:not(:hover){
+    transform: scale(1);
+    transition: 0.3 ease-in-out;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #2c2c3a;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    text-align: center;
+    overflow: hidden; /* Prevents modal content from overflowing */
+}
+
+
+/* Scroll inside modal content only */
+.modal-content {
+    flex-grow: 1;
+    overflow-y: auto; /* Enables scrolling inside modal */
+    padding: 20px;
+    max-height: 70vh;
+}
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Close Button */
+.modal-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: #1e1e2e; /* Match modal background */
+    text-align: center;
+}
+
+.modal-close {
+    background: #d4af37;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background: #b79530;
+}
+
+/* Full-Page Blur Background */
+.modal-active {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
