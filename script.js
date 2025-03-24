@@ -42,7 +42,7 @@ function closeModal() {
  * ✅ Separate function to load project data from JSON
  */
 function loadProjectData(projectId) {
-    fetch('projects.json') // Adjust path if needed
+    fetch('https://robinfrouin.github.io/projects.json') // Adjust path if needed
         .then(response => response.json())
         .then(data => {
             let project = data.projects[projectId];
