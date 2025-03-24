@@ -51,7 +51,15 @@ function loadProjectData(projectId) {
                 console.error("Project not found:", projectId);
                 return;
             }
-
+            let modalTitle = document.getElementById("modal-title");
+            let modalDescription = document.getElementById("modal-description");
+                    
+            if (modalTitle && modalDescription) {
+                modalTitle.innerHTML = "Your Project Title";
+                modalDescription.innerHTML = "Your project description here.";
+            } else {
+                console.error("Modal elements not found!");
+            }
             // Populate modal content
             document.getElementById('modal-title').innerHTML = project.title;
             document.getElementById('modal-content').innerHTML = project.html;
