@@ -14,7 +14,7 @@ function initProjectCards() {
 }
 
 function openModal(card) {
-    let projectId = card.dataset.projectId;
+    let projectId = card.dataset.project;
     console.log("Opening modal for:", projectId);
 
     loadProjectData(projectId); // ✅ Separate function for loading data
