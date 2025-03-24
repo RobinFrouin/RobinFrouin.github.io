@@ -1,16 +1,14 @@
 {
-    "projects": {
-        "project1": {
-            "title": "Top-down Video Game",
-            "html": "<h2>Top-down Video Game</h2><p>Start Date: 2023-05-01 - End Date: 2023-09-30 - Duration: 5 months</p><img src='path/to/image.jpg'><p>A top-down game with immersive mechanics.</p><h3>Gameplay Preview</h3><video src='path/to/video.mp4' controls></video><h3>Development Process</h3><p>This project was built using Unity and C# with a focus on AI behavior and level design.</p>",
-            "css": ".game-container { background-color: #1e1e2e; color: white; padding: 20px; text-align: center; }",
-            "js": "console.log('Top-down Video Game Loaded');"
-        },
-        "project2": {
-            "title": "3D Platformer",
-            "html": "<h2>3D Platformer</h2><p>Start Date: 2022-01-15 - End Date: 2022-07-30 - Duration: 6 months</p><img src='path/to/image2.jpg'><p>A fun 3D platformer inspired by classic games.</p><h3>Level Design Showcase</h3><video src='path/to/video2.mp4' controls></video><h3>Development Insights</h3><p>The project focuses on smooth character movement, physics-based puzzles, and dynamic environments.</p>",
-            "css": ".platformer-container { background-color: #2c2c3a; color: white; padding: 20px; text-align: center; }",
-            "js": "console.log('3D Platformer Loaded');"
-        }
+    "project1": {
+        "title": "Top-down Video Game",
+        "html": "<h2>Top-down Video Game</h2><p>Start Date: 2023-05-01 - End Date: 2023-09-30 - Duration: 5 months</p><img src='path/to/image.jpg'><p>A top-down game with immersive mechanics.</p><h3>Gameplay Preview</h3><video src='path/to/video.mp4' controls></video><h3>Development Process</h3><p>This project was built using Unity and C# with a focus on AI behavior and level design.</p>",
+        "css": ".game-container { background-color: #1e1e2e; color: white; padding: 20px; text-align: center; }",
+        "js": "console.log('Top-down Video Game Loaded');"
+    },
+    "project2": {
+        "title": "3D Platformer",
+        "html": "<h2>3D Platformer</h2><p>Start Date: 2022-01-15 - End Date: 2022-07-30 - Duration: 6 months</p><img src='path/to/image2.jpg'><p>A fun 3D platformer inspired by classic games.</p><h3>Level Design Showcase</h3><video src='path/to/video2.mp4' controls></video><h3>Development Insights</h3><p>The project focuses on smooth character movement, physics-based puzzles, and dynamic environments.</p>",
+        "css": ".platformer-container { background-color: #2c2c3a; color: white; padding: 20px; text-align: center; }",
+        "js": "console.log('3D Platformer Loaded');"
     }
 }
