@@ -42,33 +42,30 @@ function closeModal() {
  * ✅ Separate function to load project data from JSON
  */
 function loadProjectData(projectId) {
-    fetch('https://robinfrouin.github.io/projects.json') // Adjust path if needed
-        .then(response => response.json())
+    fetch('https://robinfrouin.github.io/projects.json') // Ensure the file is actually available on GitHub Pages
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
-            let project = data.projects[projectId];
+            let project = data.projects[projectId]; // ✅ Access project using key
 
             if (!project) {
                 console.error("Project not found:", projectId);
                 return;
             }
+
             let modalTitle = document.getElementById("modal-title");
             let modalDescription = document.getElementById("modal-description");
-                    
+
             if (modalTitle && modalDescription) {
-                modalTitle.innerHTML = "Your Project Title";
-                modalDescription.innerHTML = "Your project description here.";
+                modalTitle.innerHTML = project.title;
+                modalDescription.innerHTML = project.html;
             } else {
                 console.error("Modal elements not found!");
             }
-            // Populate modal content
-            document.getElementById('modal-title').innerHTML = project.title;
-            document.getElementById('modal-content').innerHTML = project.html;
-
-            // Apply CSS styles dynamically
-            injectProjectStyles(project.css);
-
-            // Run JavaScript if any
-            executeProjectScript(project.js);
         })
         .catch(error => console.error("Error loading project data:", error));
 }
