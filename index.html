@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper teal">
+            <a href="#" class="brand-logo center">My Portfolio</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h2>Hi, I'm [Your Name]</h2>
+                <p>I'm a passionate [Your Profession] who loves building web experiences.</p>
+                <a class="waves-effect waves-light btn-large teal darken-3">View My Work</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container">
+        <h3>About Me</h3>
+        <p>I am a web developer with experience in HTML, CSS, JavaScript, and Materialize.</p>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container">
+        <h3>Projects</h3>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="project1.jpg">
+                        <span class="card-title">Project 1</span>
+                    </div>
+                    <div class="card-content">
+                        <p>A brief description of this awesome project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container">
+        <h3>Contact Me</h3>
+        <form>
+            <div class="input-field">
+                <input type="text" id="name">
+                <label for="name">Your Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email">
+                <label for="email">Your Email</label>
+            </div>
+            <button class="btn waves-effect waves-light teal darken-3" type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
