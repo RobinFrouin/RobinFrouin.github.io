@@ -3,8 +3,7 @@
         "project1": {
             "title": "Top-down Video Game",
             "layout": "left",
-            "html": "<div class='project-container'>
-                        <div class='media'><img src='path/to/topdown-image.jpg'></div><div class='text'><h2>Top-down Video Game</h2><p>Start Date: 2023-05-01 - End Date: 2023-09-30 - Duration: 5 months</p><p>A top-down game with immersive mechanics.</p><h3>Gameplay Preview</h3><div class='row'><span class='col s6'><video src='path/to/topdown-video.mp4' controls></video></span><span class='col s6'><p>This project was built using Unity and C# with a focus on AI behavior and level design.</p></span></div></div></div>",
+            "html": "<div class='project-container'><div class='media'><img src='path/to/topdown-image.jpg'></div><div class='text'><h2>Top-down Video Game</h2><p>Start Date: 2023-05-01 - End Date: 2023-09-30 - Duration: 5 months</p><p>A top-down game with immersive mechanics.</p><h3>Gameplay Preview</h3><div class='row'><span class='col s6'><video src='path/to/topdown-video.mp4' controls></video></span><span class='col s6'><p>This project was built using Unity and C# with a focus on AI behavior and level design.</p></span></div></div></div>",
             "css": ".project-container { display: flex; align-items: center; padding: 20px; } .left { flex-direction: row; } .right { flex-direction: row-reverse; } .media { flex: 1; text-align: center; } .text { flex: 2; color: white; padding: 20px; }",
             "js": "console.log('Top-down Video Game Loaded');"
         },
