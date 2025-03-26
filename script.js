@@ -17,7 +17,7 @@ function openModal(card) {
     let projectId = card.dataset.project;
     console.log("Opening modal for:", projectId);
 
-    loadProjectData(projectId); // ✅ Separate function for loading data
+    loadProjectData(projectId);
 
     let modal = document.getElementById('project-modal');
     let blurBackground = document.createElement("div");
@@ -38,11 +38,9 @@ function closeModal() {
     }
 }
 
-/** 
- * ✅ Separate function to load project data from JSON
- */
+
 function loadProjectData(projectId) {
-    fetch('https://robinfrouin.github.io/projects.json') // Ensure the file is actually available on GitHub Pages
+    fetch('https://robinfrouin.github.io/projects.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -50,18 +48,15 @@ function loadProjectData(projectId) {
             return response.json();
         })
         .then(data => {
-            let project = data.projects[projectId]; // ✅ Access project using key
-
+            let project = data.projects[projectId];
             if (!project) {
                 console.error("Project not found:", projectId);
                 return;
             }
 
-            let modalTitle = document.getElementById("modal-title");
             let modalDescription = document.getElementById("modal-description");
 
-            if (modalTitle && modalDescription) {
-                modalTitle.innerHTML = project.title;
+            if (modalDescription) {
                 modalDescription.innerHTML = project.html;
             } else {
                 console.error("Modal elements not found!");
@@ -70,9 +65,7 @@ function loadProjectData(projectId) {
         .catch(error => console.error("Error loading project data:", error));
 }
 
-/**
- * ✅ Function to inject dynamic CSS
- */
+
 function injectProjectStyles(css) {
     let styleElement = document.getElementById("dynamic-style");
     if (!styleElement) {
@@ -83,12 +76,10 @@ function injectProjectStyles(css) {
     styleElement.innerHTML = css;
 }
 
-/**
- * ✅ Function to execute dynamic JavaScript
- */
+
 function executeProjectScript(js) {
     try {
-        eval(js); // ⚠️ Be cautious using eval (consider safer alternatives)
+        eval(js);
     } catch (error) {
         console.error("Error executing project script:", error);
     }
@@ -96,7 +87,7 @@ function executeProjectScript(js) {
 function initFilters() {
     document.querySelectorAll('.tabs a').forEach(tab => {
         tab.addEventListener('click', function (event) {
-            event.preventDefault(); // ✅ Prevents default tab behavior
+            event.preventDefault();
             let filterType = this.dataset.filter;
             filterProjects(filterType);
         });
@@ -121,7 +112,7 @@ function filterProjects(filterType) {
     }
 
     let container = document.querySelector('.projects-container'); 
-    container.innerHTML = ""; // ✅ Clear only projects, NOT tabs or title
+    container.innerHTML = "";
 
     projects.forEach(project => container.appendChild(project));
 }
