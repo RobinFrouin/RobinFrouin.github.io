@@ -1,18 +1,46 @@
 {
     "projects": {
         "project1": {
-            "title": "Top-down Video Game",
+            "title": "Outil de Stéganographie Bitmap",
             "layout": "left",
-            "html": "<div class='project-container'><div class='media'><img src='path/to/topdown-image.jpg'></div><div class='text'><h2>Top-down Video Game</h2><p>Start Date: 2023-05-01 - End Date: 2023-09-30 - Duration: 5 months</p><p>A top-down game with immersive mechanics.</p><h3>Gameplay Preview</h3><div class='row'><span class='col s6'><video src='path/to/topdown-video.mp4' controls></video></span><span class='col s6'><p>This project was built using Unity and C# with a focus on AI behavior and level design.</p></span></div></div></div>",
+            "html": "<div class='project-container'><div class='media'><img src='path/to/steganography-image.jpg'></div><div class='text'><h2>Outil de Stéganographie Bitmap</h2><p>Date de début: 2025-01-01 - Date de fin: 2025-03-01 - Durée: 2 mois</p><p>Développement d'un outil pour cacher et récupérer des données dans les couleurs d'une image Bitmap (.bmp) avec une interface utilisateur simple.</p><h3>Vidéo de Démonstration</h3><div class='row'><span class='col s6'><video src='path/to/steganography-video.mp4' controls></video></span><span class='col s6'><p>Ce projet a été construit en C++ en utilisant la bibliothèque Windows Bitmap pour manipuler les images et la gestion du multithreading pour éviter les blocages.</p></span></div></div></div>",
             "css": ".project-container { display: flex; align-items: center; padding: 20px; } .left { flex-direction: row; } .right { flex-direction: row-reverse; } .media { flex: 1; text-align: center; } .text { flex: 2; color: white; padding: 20px; }",
-            "js": "console.log('Top-down Video Game Loaded');"
+            "js": "console.log('Outil de Stéganographie Bitmap Chargé');"
         },
         "project2": {
-            "title": "3D Platformer",
+            "title": "Gestion de Balles avec Collisions",
             "layout": "right",
-            "html": "<div class='project-container'><div class='text'><h2>3D Platformer</h2><p>Start Date: 2022-01-15 - End Date: 2022-07-30 - Duration: 6 months</p><p>A fun 3D platformer inspired by classic games.</p><h3>Level Design Showcase</h3><video src='path/to/video2.mp4' controls></video><h3>Development Insights</h3><p>The project focuses on smooth character movement, physics-based puzzles, and dynamic environments.</p></div><div class='media'><img src='path/to/image2.jpg'></div></div>",
+            "html": "<div class='project-container'><div class='text'><h2>Gestion de Balles avec Collisions</h2><p>Date de début: 2025-03-01 - Date de fin: 2025-04-01 - Durée: 1 mois</p><p>Création d'une application Windows utilisant GDI et SFML pour gérer des balles en mouvement avec collisions.</p><h3>Visuel du Projet</h3><video src='path/to/ball-collision-video.mp4' controls></video><h3>Insights de Développement</h3><p>Ce projet met en œuvre une architecture solide avec encapsulation des variables et une gestion efficace des ressources, en plus de l'optimisation des performances.</p></div><div class='media'><img src='path/to/ball-collision-image.jpg'></div></div>",
             "css": ".project-container { display: flex; align-items: center; padding: 20px; } .left { flex-direction: row; } .right { flex-direction: row-reverse; } .media { flex: 1; text-align: center; } .text { flex: 2; color: white; padding: 20px; }",
-            "js": "console.log('3D Platformer Loaded');"
+            "js": "console.log('Gestion de Balles avec Collisions Chargé');"
+        },
+        "project3": {
+            "title": "Jeu de Rugby Simplifié avec IA",
+            "layout": "left",
+            "html": "<div class='project-container'><div class='media'><img src='path/to/rugby-ai-image.jpg'></div><div class='text'><h2>Jeu de Rugby Simplifié avec IA</h2><p>Date de début: 2025-02-01 - Date de fin: 2025-05-01 - Durée: 3 mois</p><p>Développement d'un jeu de rugby avec IA utilisant des machines à états pour simuler des comportements d'équipe.</p><h3>Présentation du Jeu</h3><div class='row'><span class='col s6'><video src='path/to/rugby-ai-video.mp4' controls></video></span><span class='col s6'><p>Le jeu implémente des interactions entre joueurs et le ballon, en utilisant des machines à états pour structurer les comportements IA.</p></span></div></div></div>",
+            "css": ".project-container { display: flex; align-items: center; padding: 20px; } .left { flex-direction: row; } .right { flex-direction: row-reverse; } .media { flex: 1; text-align: center; } .text { flex: 2; color: white; padding: 20px; }",
+            "js": "console.log('Jeu de Rugby Simplifié avec IA Chargé');"
+        },
+        "project4": {
+            "title": "FPS Prototype sur Unity 3D",
+            "layout": "right",
+            "html": "<div class='project-container'><div class='text'><h2>FPS Prototype sur Unity 3D</h2><p>Date de début: 2025-03-15 - Date de fin: 2025-06-01 - Durée: 3 mois</p><p>Création d'un prototype de jeu FPS avec des mécaniques de base et une direction artistique low poly.</p><h3>Présentation du Gameplay</h3><video src='path/to/fps-prototype-video.mp4' controls></video><h3>Développement d'IA et Gameplay</h3><p>Le prototype inclut des systèmes de dégâts et d'IA pour les ennemis, avec des animations d'armes et de VFX.</p></div><div class='media'><img src='path/to/fps-prototype-image.jpg'></div></div>",
+            "css": ".project-container { display: flex; align-items: center; padding: 20px; } .left { flex-direction: row; } .right { flex-direction: row-reverse; } .media { flex: 1; text-align: center; } .text { flex: 2; color: white; padding: 20px; }",
+            "js": "console.log('FPS Prototype sur Unity 3D Chargé');"
+        },
+        "project5": {
+            "title": "Unity Shader et Feedback Visuels",
+            "layout": "left",
+            "html": "<div class='project-container'><div class='media'><img src='path/to/unity-shader-image.jpg'></div><div class='text'><h2>Unity Shader et Feedback Visuels</h2><p>Date de début: 2025-04-01 - Date de fin: 2025-06-15 - Durée: 2 mois</p><p>Création de shaders et intégration de feedbacks visuels dans un jeu A-RPG stylisé avec Unity.</p><h3>Effets de Shader et Combat</h3><video src='path/to/unity-shader-video.mp4' controls></video><h3>Développement d'Shaders et Gameplay</h3><p>Ce projet met en avant la création de shaders avec ShaderGraph et l'intégration de feedbacks visuels pour enrichir l'expérience de jeu.</p></div></div>",
+            "css": ".project-container { display: flex; align-items: center; padding: 20px; } .left { flex-direction: row; } .right { flex-direction: row-reverse; } .media { flex: 1; text-align: center; } .text { flex: 2; color: white; padding: 20px; }",
+            "js": "console.log('Unity Shader et Feedback Visuels Chargé');"
+        },
+        "project6": {
+            "title": "Jeu Incrémental avec Interface Unity UI",
+            "layout": "right",
+            "html": "<div class='project-container'><div class='text'><h2>Jeu Incrémental avec Interface Unity UI</h2><p>Date de début: 2025-04-01 - Date de fin: 2025-06-01 - Durée: 2 mois</p><p>Création d'un jeu incrémental avec une interface utilisateur intuitive et responsive sous Unity.</p><h3>Exemple d'Interface Utilisateur</h3><video src='path/to/incremental-game-video.mp4' controls></video><h3>Optimisation de l'Expérience Utilisateur</h3><p>Le jeu permet la gestion d'une usine de production de trombones, avec des menus HUD et des fonctionnalités d'amélioration des usines.</p></div><div class='media'><img src='path/to/incremental-game-image.jpg'></div></div>",
+            "css": ".project-container { display: flex; align-items: center; padding: 20px; } .left { flex-direction: row; } .right { flex-direction: row-reverse; } .media { flex: 1; text-align: center; } .text { flex: 2; color: white; padding: 20px; }",
+            "js": "console.log('Jeu Incrémental avec Interface Unity UI Chargé');"
         }
     }
 }

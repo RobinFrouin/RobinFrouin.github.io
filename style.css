@@ -1,10 +1,16 @@
 /* Updated style.css to match CV style */
+:root {
+    --RPFgold: #B99B6C;  /* Gold-like color */
+    --RPFGrey: #333844;  /* Dark Grey */
+    --RPFDark: #21212c;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #1e1e2e;
+    background-color: var(--RPFDark);
     color: #ffffff;
     font-family: 'Arial', sans-serif;
 }
@@ -14,7 +20,7 @@ body {
 }
 
 nav {
-    background-color: #d4af37;
+    background-color: var(--RPFgold);
 }
 
 .nav-wrapper .brand-logo {
@@ -22,15 +28,15 @@ nav {
 }
 
 h3 {
-    color: #d4af37;
+    color: var(--RPFgold);
 }
 
 .btn {
-    background-color: #d4af37;
+    background-color: var(--RPFgold);
 }
 
 #filter {
-    background-color: #1e1e2e !important;
+    background-color: var(--RPFDark) !important;
     text-align: center;
 }
 
@@ -44,22 +50,22 @@ h3 {
 
 /* Hover effect */
 .tabs .tab a:hover {
-    color: #d4af37 !important; /* Gold on hover */
+    color: var(--RPFgold) !important; /* Gold on hover */
 }
 
 /* Active tab (clicked and released) */
 .tabs .tab a:focus, 
 .tabs .tab a.active {
-    color: #d4af37 !important; /* Gold for active tab */
-    background-color: #d4af3713 !important; /* Transparent gold */
-    border-bottom: 3px solid #d4af37 !important; /* Proper border */
+    color: var(--RPFgold) !important; /* Gold for active tab */
+    background-color: var(--RPFgold)13 !important; /* Transparent gold */
+    border-bottom: 3px solid var(--RPFgold) !important; /* Proper border */
 }
 
 
 
 /* Card Styles */
 .card {
-    background-color: #2c2c3a;
+    background-color: var(--RPFGrey);
     color: #ffffff;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -68,7 +74,7 @@ h3 {
 }
 
 .card-title{
-    background-color: #1e1e2e;
+    background-color: var(--RPFDark);
     padding: 5px;
     border-radius: 5px;
 }
@@ -91,7 +97,7 @@ h3 {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    background-color: #2c2c3a;
+    background-color: var(--RPFGrey);
     color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -118,12 +124,12 @@ body.modal-open {
     bottom: 0;
     width: 100%;
     padding: 15px;
-    background: #1e1e2e; /* Match modal background */
+    background: var(--RPFDark); /* Match modal background */
     text-align: center;
 }
 
 .modal-close {
-    background: #d4af37;
+    background: var(--RPFgold);
     color: black;
     padding: 10px 15px;
     border: none;
