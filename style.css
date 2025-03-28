@@ -164,20 +164,17 @@ body.modal-open {
 }
 
 /* Close Button */
-.modal-footer {
+.modal .modal-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 15px;
-    margin-top: 10%;
-    background: var(--RPFDark); /* Match modal background */
-    text-align: center;
+    margin-top: 2%;
+    background-color: var(--RPFDark); /* Match modal background */
 }
 
 .modal-close {
     background: var(--RPFgold);
     color: black;
-    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
