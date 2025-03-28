@@ -20,7 +20,7 @@ body {
 }
 
 nav {
-    background-color: var(--RPFgold);
+    background: linear-gradient(90deg ,var(--RPFgold),var(--RPFGrey)) !important;
 }
 
 .nav-wrapper .brand-logo {
