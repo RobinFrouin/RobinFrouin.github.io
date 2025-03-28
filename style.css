@@ -61,6 +61,10 @@ h3 {
     border-bottom: 3px solid var(--RPFgold) !important; /* Proper border */
 }
 
+.title{
+    color: var(--RPFgold);
+    font-weight: bold;
+}
 
 .title-left{
     color: var(--RPFgold);
@@ -165,6 +169,7 @@ body.modal-open {
     bottom: 0;
     width: 100%;
     padding: 15px;
+    margin-top: 10%;
     background: var(--RPFDark); /* Match modal background */
     text-align: center;
 }
