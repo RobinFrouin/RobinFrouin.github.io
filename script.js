@@ -38,7 +38,6 @@ function closeModal() {
     }
 }
 
-
 function loadProjectData(projectId) {
     fetch('https://robinfrouin.github.io/projects.json')
         .then(response => {
@@ -65,7 +64,6 @@ function loadProjectData(projectId) {
         .catch(error => console.error("Error loading project data:", error));
 }
 
-
 function injectProjectStyles(css) {
     let styleElement = document.getElementById("dynamic-style");
     if (!styleElement) {
@@ -76,7 +74,6 @@ function injectProjectStyles(css) {
     styleElement.innerHTML = css;
 }
 
-
 function executeProjectScript(js) {
     try {
         eval(js);
@@ -84,35 +81,50 @@ function executeProjectScript(js) {
         console.error("Error executing project script:", error);
     }
 }
+
 function initFilters() {
+    const projectCards = document.querySelectorAll('.project-card');
     document.querySelectorAll('.tabs a').forEach(tab => {
         tab.addEventListener('click', function (event) {
             event.preventDefault();
             let filterType = this.dataset.filter;
-            filterProjects(filterType);
+            filterProjects(filterType, projectCards);
         });
     });
 }
 
-function filterProjects(filterType) {
-    let projects = Array.from(document.querySelectorAll('.projects-container .card'));
+function filterProjects(filter, projectCards) {
+    const projectsArray = Array.from(projectCards);
 
-    console.log("Sorting by:", filterType);
-
-    if (filterType === 'recent') {
-        projects.sort((a, b) => new Date(b.dataset.start) - new Date(a.dataset.start));
-    } else if (filterType === 'oldest') {
-        projects.sort((a, b) => new Date(a.dataset.start) - new Date(b.dataset.start));
-    } else if (filterType === 'shortest') {
-        projects.sort((a, b) => parseInt(a.dataset.duration) - parseInt(b.dataset.duration));
-    } else if (filterType === 'longest') {
-        projects.sort((a, b) => parseInt(b.dataset.duration) - parseInt(a.dataset.duration));
-    } else if (filterType === 'proud') {
-        projects.sort((a, b) => parseInt(a.dataset.proud) - parseInt(b.dataset.proud));
+    if (projectsArray.length === 0) {
+        console.warn("No project cards found to filter.");
+        return;
     }
 
-    let container = document.querySelector('.projects-container'); 
-    container.innerHTML = "";
+    projectsArray.sort((a, b) => {
+        const startA = new Date(a.getAttribute('data-start'));
+        const startB = new Date(b.getAttribute('data-start'));
+        const endA = new Date(a.getAttribute('data-end'));
+        const endB = new Date(b.getAttribute('data-end'));
+        const durationA = parseFloat(a.getAttribute('data-duration'));
+        const durationB = parseFloat(b.getAttribute('data-duration'));
 
-    projects.forEach(project => container.appendChild(project));
+        switch (filter) {
+            case 'recent':
+                return endB - endA;
+            case 'oldest':
+                return startA - startB;
+            case 'shortest':
+                return durationA - durationB;
+            case 'longest':
+                return durationB - durationA;
+            default:
+                return 0;
+        }
+    });
+
+    const projectsContainer = document.querySelector('.projects-container');
+    projectsContainer.innerHTML = '';
+    projectsArray.forEach(card => projectsContainer.appendChild(card));
 }
+
