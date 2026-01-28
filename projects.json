@@ -46,55 +46,55 @@
         },
 
         "project1": {
-      "html": {
-        "start": "<div class='project-container center'>",
-        "projectname": "<h2 class='title-center'>Bitmap Steganographie tool</h2>",
-        "goal": {
-          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
-          "description": "<p>Develop a steganography tool with a user interface to hide and retrieve data within the colors of a Bitmap (.bmp) image.</p>"
-        },
-        "realisation": {
-          "title": "<h3 class=\"title-left\">Implementation:</h3>",
-          "startlist": "<ul class='text-left'>",
-          "elements": {
-            "el1": "<li>Encapsulation of the Windows Bitmap library.</li>",
-            "el2": "<li>Created a minimalist user interface to manipulate images.</li>",
-            "el3": "<li>Implemented features to load, save, write, and read data inside images.</li>",
-            "el4": "<li>Managed multithreading to prevent the application from freezing during image processing.</li>"
-          },
-          "endlist": "</ul>"
-        },
-        "skills": {
-          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
-          "startlist": "<ul class='text-left'>",
-          "elements": {
-            "el1": "<li>Encapsulation and use of C++ libraries.</li>",
-            "el2": "<li>Developed user interfaces using the Windows UI library.</li>",
-            "el3": "<li>RGB color manipulation for steganography.</li>",
-            "el4": "<li>Memory management and performance optimization.</li>"
-          },
-          "endlist": "</ul>"
-        },
-        "utility": {
-          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
-          "startlist": "<ul class='text-left'>",
-          "elements": {
-            "el1": "<li>C++, Windows Bitmap Library, Multithreading.</li>"
-          },
-          "endlist": "</ul>"
-        },
-        "image" : {
-                "title" :"<h3 class=\"title-left\">Image</h3>",
-                "startlist":"<ul class='text-left'>",
-                "elements" : {
-                    "el1" : "<li><img src = 'img/Design sans titre.png'></li>",
-                    "el2" : "<li><img src = 'img/Design sans titre.png'></li>",
-                    "el3" : "<li><img src = 'img/Design sans titre.png'></li>"
-                }
-              },
-        "end": "</div>"
-      },
-      "js": "console.log('Advanced Programming Project Loaded');"
+            "html": {
+                "start": "<div class='project-container center'>",
+                "projectname": "<h2 class='title-center'>Bitmap Steganographie tool</h2>",
+                "goal": {
+                    "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+                    "description": "<p>Develop a steganography tool with a user interface to hide and retrieve data within the colors of a Bitmap (.bmp) image.</p>"
+                },
+                "realisation": {
+                    "title": "<h3 class=\"title-left\">Implementation:</h3>",
+                    "startlist": "<ul class='text-left'>",
+                    "elements": {
+                        "el1": "<li>Encapsulation of the Windows Bitmap library.</li>",
+                        "el2": "<li>Created a minimalist user interface to manipulate images.</li>",
+                        "el3": "<li>Implemented features to load, save, write, and read data inside images.</li>",
+                        "el4": "<li>Managed multithreading to prevent the application from freezing during image processing.</li>"
+                    },
+                    "endlist": "</ul>"
+                },
+                "skills": {
+                    "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+                    "startlist": "<ul class='text-left'>",
+                    "elements": {
+                        "el1": "<li>Encapsulation and use of C++ libraries.</li>",
+                        "el2": "<li>Developed user interfaces using the Windows UI library.</li>",
+                        "el3": "<li>RGB color manipulation for steganography.</li>",
+                        "el4": "<li>Memory management and performance optimization.</li>"
+                    },
+                    "endlist": "</ul>"
+                },
+                "utility": {
+                    "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+                    "startlist": "<ul class='text-left'>",
+                    "elements": {
+                        "el1": "<li>C++, Windows Bitmap Library, Multithreading.</li>"
+                    },
+                    "endlist": "</ul>"
+                },
+                "image" : {
+                    "title" :"<h3 class=\"title-left\">Image</h3>",
+                    "startlist":"<ul class='text-left'>",
+                    "elements" : {
+                        "el1" : "<li><img src = 'img/Design sans titre.png'></li>",
+                        "el2" : "<li><img src = 'img/Design sans titre.png'></li>",
+                        "el3" : "<li><img src = 'img/Design sans titre.png'></li>"
+                    },
+                    "endlist" :"</ul>"
+                },
+                "end": "</div>"
+            }
         },
 
         "project2": {
