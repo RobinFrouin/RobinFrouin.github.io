@@ -1,8 +1,8 @@
-/* Updated style.css to match CV style */
 :root {
-    --RPFgold: #B99B6C;  /* Gold-like color */
-    --RPFGrey: #333844;  /* Dark Grey */
-    --RPFDark: #21212c;
+    --RPFGold: #B99B6C;  /* Gold Main */
+    --RPFGoldHoover : #b79530; /* Gold Hoover */
+    --RPFGrey: #333844;  /* Grey */
+    --RPFDark: #21212c;  /* Dark Grey */
 }
 
 html {
@@ -15,12 +15,67 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+body.maintenance-open {
+  overflow: hidden;
+}
+
+.maintenance-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, rgba(185,155,108,0.15), rgba(0,0,0,0.65));
+  z-index: 9999;
+  padding: 24px;
+}
+
+.maintenance-card {
+  width: min(720px, 100%);
+  background: var(--RPFGrey);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.maintenance-card p {
+  margin-top: 12px;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.maintenance-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.maintenance-close {
+    background: var(--RPFGold);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.maintenance-close:hover {
+    background: var(--RPFGoldHoover);
+}
+
+.maintenance-hint {
+  opacity: 0.85;
+}
+
 .container {
     margin-top: 50px;
 }
 
 nav {
-    background: linear-gradient(90deg ,var(--RPFgold),var(--RPFGrey)) !important;
+    background: linear-gradient(90deg ,var(--RPFGold),var(--RPFGrey)) !important;
 }
 
 .nav-wrapper .brand-logo {
@@ -28,11 +83,11 @@ nav {
 }
 
 h3 {
-    color: var(--RPFgold);
+    color: var(--RPFGold);
 }
 
 .btn {
-    background-color: var(--RPFgold);
+    background-color: var(--RPFGold);
 }
 
 #filter {
@@ -50,36 +105,36 @@ h3 {
 
 /* Hover effect */
 .tabs .tab a:hover {
-    color: var(--RPFgold) !important; /* Gold on hover */
+    color: var(--RPFGold) !important; /* Gold on hover */
 }
 
 /* Active tab (clicked and released) */
 .tabs .tab a:focus, 
 .tabs .tab a.active {
-    color: var(--RPFgold) !important; /* Gold for active tab */
-    background-color: var(--RPFgold)13 !important; /* Transparent gold */
-    border-bottom: 3px solid var(--RPFgold) !important; /* Proper border */
+    color: var(--RPFGold) !important; /* Gold for active tab */
+    background-color: var(--RPFGold)13 !important; /* Transparent gold */
+    border-bottom: 3px solid var(--RPFGold) !important; /* Proper border */
 }
 
 .title{
-    color: var(--RPFgold);
+    color: var(--RPFGold);
     font-weight: bold;
 }
 
 .title-left{
-    color: var(--RPFgold);
+    color: var(--RPFGold);
     font-weight: bold;
     text-align: left;
 }
 
 .title-right{
-    color: var(--RPFgold);
+    color: var(--RPFGold);
     font-weight: bold;
     text-align: right;
 }
 
 .title-center{
-    color: var(--RPFgold);
+    color: var(--RPFGold);
     font-weight: bold;
     text-align: center;
 }
@@ -173,7 +228,7 @@ body.modal-open {
 }
 
 .modal-close {
-    background: var(--RPFgold);
+    background: var(--RPFGold);
     color: black;
     border: none;
     border-radius: 5px;
@@ -181,7 +236,7 @@ body.modal-open {
 }
 
 .modal-close:hover {
-    background: #b79530;
+    background: var(--RPFGoldHoover);
 }
 
 /* Full-Page Blur Background */

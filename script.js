@@ -1,7 +1,39 @@
+const MAINTENANCE_MODE = true ;
+// const MAINTENANCE_MODE = false ;
+
 document.addEventListener('DOMContentLoaded', function () {
-    initProjectCards();
-    initFilters();
+    if (MAINTENANCE_MODE)
+    {
+        showMaintenance();
+    }
+    else
+    {
+        showSite()
+        initProjectCards();
+        initFilters();
+    }
+    
 });
+
+function showMaintenance() {
+  const maintenance = document.getElementById("maintenance");
+  if (maintenance) maintenance.style.display = "flex";
+
+  const site = document.getElementById("site");
+  if (site) site.style.display = "none";
+
+  document.querySelectorAll("body > .container").forEach(el => {
+    el.style.display = "none";
+  });
+
+  document.body.classList.add("maintenance-open");
+}
+
+function showSite() {
+
+  const site = document.getElementById("site");
+  if (site) site.style.display = "";
+}
 
 function initProjectCards() {
     document.querySelectorAll('.card').forEach(card => {
