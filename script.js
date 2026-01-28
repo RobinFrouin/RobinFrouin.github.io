@@ -46,8 +46,8 @@ function buildGoal(projectGoal) {
 function buildRealisationList(projectRealisationList) {
     const prl = projectRealisationList;
     let prlElements = "";
-    for (lements in prl) {
-        prlElements += elements;
+    for (const elements in prl) {
+        prlElements += prl[elements];
     }
     return prlElements;
 }
@@ -65,8 +65,8 @@ function buildRealisation(projectRealisation) {
 function buildSkillsList(projectSkillsList) {
     const psl = projectSkillsList;
     let pslElements = "";
-    for (elements in psl) {
-        pslElements += elements;
+    for (const elements in psl) {
+        pslElements += psl[elements];
     }
     return pslElements;
 }
@@ -82,10 +82,10 @@ function buildSkills(projectSkills) {
 }
 
 function buildUtilityList(projectUtilityList) {
-    const pul = projectSkillsList;
+    const pul = projectUtilityList;
     let pulElements = "";
-    for (elements in pul) {
-        pulElements += elements;
+    for (const elements in pul) {
+        pulElements += pul[elements];
     }
     return pulElements;
 }
