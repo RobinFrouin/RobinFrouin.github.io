@@ -1,5 +1,5 @@
-const MAINTENANCE_MODE = true ;
-// const MAINTENANCE_MODE = false ;
+// const MAINTENANCE_MODE = true ;
+const MAINTENANCE_MODE = false ;
 
 document.addEventListener('DOMContentLoaded', function () {
     if (MAINTENANCE_MODE)
@@ -146,6 +146,14 @@ function buildProjectHtml(project) {
     const realisation = buildRealisation(ph.realisation);
     const skills = buildSkills(ph.skills);
     const utility = buildUtility(ph.utility);
+    let image = "";
+    if (ph.image){
+        image = buildImage(ph.image)
+    }
+    let video = "";
+    if (ph.video){
+        video = buildVideo(ph.video)
+    }
     const end = ph.end;
     const html = start + projectname + goal + realisation + skills + utility + end;
     return html;

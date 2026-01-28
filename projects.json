@@ -1,9 +1,54 @@
 {
-  "projects": {
-    "project1": {
+  
+    "projects": {
+
+        "projectXXX": {
+            "html": {
+              "start": "<div class='project-container center'>",
+              "projectname": "<h2 class='title-center'>.............</h2>",
+              "goal": {
+                "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+                "description": "<p>.............</p>"
+              },
+              "realisation": {
+                "title": "<h3 class=\"title-left\">Implementation:</h3>",
+                "startlist": "<ul class='text-left'>",
+                "elements": {
+                  "el1": "<li>.............</li>"
+                },
+                "endlist": "</ul>"
+              },
+              "skills": {
+                "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+                "startlist": "<ul class='text-left'>",
+                "elements": {
+                  "el1": "<li>.............</li>"
+                },
+                "endlist": "</ul>"
+              },
+              "utility": {
+                "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+                "startlist": "<ul class='text-left'>",
+                "elements": {
+                  "el1": "<li>.............</li>"
+                },
+                "endlist": "</ul>"
+              },
+              "image" : {
+                "title" :"<h3 class=\"title-left\">Image</h3>",
+                "startlist":"<ul class='text-left'>",
+                "elements" : {
+                    "el1" : "<li><img src = 'img/Design sans titre.png'></li>"
+                }
+              },
+              "end": "</div>"
+            }
+        },
+
+        "project1": {
       "html": {
         "start": "<div class='project-container center'>",
-        "projectname": "<h2 class='title-center'>Advanced Programming</h2>",
+        "projectname": "<h2 class='title-center'>Bitmap Steganographie tool</h2>",
         "goal": {
           "title": "<h3 class=\"title-left\">Project Goal:</h3>",
           "description": "<p>Develop a steganography tool with a user interface to hide and retrieve data within the colors of a Bitmap (.bmp) image.</p>"
@@ -38,11 +83,21 @@
           },
           "endlist": "</ul>"
         },
+        "image" : {
+                "title" :"<h3 class=\"title-left\">Image</h3>",
+                "startlist":"<ul class='text-left'>",
+                "elements" : {
+                    "el1" : "<li><img src = 'img/Design sans titre.png'></li>",
+                    "el2" : "<li><img src = 'img/Design sans titre.png'></li>",
+                    "el3" : "<li><img src = 'img/Design sans titre.png'></li>"
+                }
+              },
         "end": "</div>"
       },
       "js": "console.log('Advanced Programming Project Loaded');"
-    },
-    "project2": {
+        },
+
+        "project2": {
       "html": {
         "start": "<div class='project-container center'>",
         "projectname": "<h2 class='title-center'>Ball Management with Collisions</h2>",
@@ -82,8 +137,9 @@
         "end": "</div>"
       },
       "js": "console.log('Ball Management with Collisions Project Loaded');"
-    },
-    "project3": {
+        },
+
+        "project3": {
       "html": {
         "start": "<div class='project-container center'>",
         "projectname": "<h2 class='title-center'>Simplified Rugby Game with AI</h2>",
@@ -122,8 +178,9 @@
         "end": "</div>"
       },
       "js": "console.log('Simplified Rugby Game with AI Project Loaded');"
-    },
-    "project4": {
+        },
+
+        "project4": {
       "html": {
         "start": "<div class='project-container center'>",
         "projectname": "<h2 class='title-center'>FPS Prototype sur Unity 3D</h2>",
@@ -163,8 +220,9 @@
         "end": "</div>"
       },
       "js": "console.log('FPS Prototype sur Unity 3D Project Loaded');"
-    },
-    "project5": {
+        },
+
+        "project5": {
       "html": {
         "start": "<div class='project-container center'>",
         "projectname": "<h2 class='title-center'>Unity Shader et Feedback Visuels</h2>",
@@ -203,8 +261,9 @@
         "end": "</div>"
       },
       "js": "console.log('Unity Shader et Feedback Visuels Project Loaded');"
-    },
-    "project6": {
+        },
+
+        "project6": {
       "html": {
         "start": "<div class='project-container center'>",
         "projectname": "<h2 class='title-center'>Unity UI</h2>",
@@ -244,8 +303,9 @@
         "end": "</div>"
       },
       "js": "console.log('Unity UI Project Loaded');"
-    },
-    "project7": {
+        },
+
+        "project7": {
       "html": {
         "start": "<div class='project-container center'>",
         "projectname": "<h2 class='title-center'>Unreal Engine Blueprint</h2>",
@@ -284,8 +344,9 @@
         "end": "</div>"
       },
       "js": "console.log('Unreal Engine Blueprint Project Loaded');"
-    },
-    "project8": {
+        },
+
+        "project8": {
       "html": {
         "start": "<div class='project-container center'>",
         "projectname": "<h2 class='title-center'>Unreal Engine C++</h2>",
@@ -331,8 +392,9 @@
         "end": "</div>"
       },
       "js": "console.log('Unreal Engine C++ Project Loaded');"
-    },
-    "project9": {
+        },
+
+        "project9": {
       "html": {
         "start": "<div class='project-container center'>",
         "projectname": "<h2 class='title-center'>Advanced Unreal Physics</h2>",
@@ -371,6 +433,7 @@
         "end": "</div>"
       },
       "js": "console.log('Advanced Unreal Physics Project Loaded');"
-    }
+        }
+
   }
 }
