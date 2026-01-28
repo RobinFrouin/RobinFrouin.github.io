@@ -4,44 +4,47 @@
 
         "projectXXX": {
             "html": {
-              "start": "<div class='project-container center'>",
-              "projectname": "<h2 class='title-center'>.............</h2>",
-              "goal": {
-                "title": "<h3 class=\"title-left\">Project Goal:</h3>",
-                "description": "<p>.............</p>"
-              },
-              "realisation": {
-                "title": "<h3 class=\"title-left\">Implementation:</h3>",
-                "startlist": "<ul class='text-left'>",
-                "elements": {
-                  "el1": "<li>.............</li>"
+                "start": "<div class='project-container center'>",
+                "projectname": "<h2 class='title-center'>.............</h2>",
+                "goal": {
+                    "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+                    "description": "<p>.............</p>"
                 },
-                "endlist": "</ul>"
-              },
-              "skills": {
-                "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
-                "startlist": "<ul class='text-left'>",
-                "elements": {
-                  "el1": "<li>.............</li>"
+                "realisation": {
+                    "title": "<h3 class=\"title-left\">Implementation:</h3>",
+                    "startlist": "<ul class='text-left'>",
+                    "elements": {
+                        "el1": "<li>.............</li>"
+                    },
+                    "endlist": "</ul>"
                 },
-                "endlist": "</ul>"
-              },
-              "utility": {
-                "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
-                "startlist": "<ul class='text-left'>",
-                "elements": {
-                  "el1": "<li>.............</li>"
+                "skills": {
+                    "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+                    "startlist": "<ul class='text-left'>",
+                    "elements": {
+                        "el1": "<li>.............</li>"
+                    },
+                    "endlist": "</ul>"
                 },
-                "endlist": "</ul>"
-              },
-              "image" : {
-                "title" :"<h3 class=\"title-left\">Image</h3>",
-                "startlist":"<ul class='text-left'>",
-                "elements" : {
-                    "el1" : "<li><img src = 'img/Design sans titre.png'></li>"
-                }
-              },
-              "end": "</div>"
+                "utility": {
+                    "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+                    "startlist": "<ul class='text-left'>",
+                    "elements": {
+                        "el1": "<li>.............</li>"
+                    },
+                    "endlist": "</ul>"
+                },
+                "image" : {
+                    "title" :"<h3 class=\"title-left\">Image</h3>",
+                    "startlist":"<ul class='text-left'>",
+                    "elements" : {
+                        "el1" : "<li><img src = 'img/Design sans titre.png'></li>",
+                        "el2" : "<li><img src = 'img/Design sans titre.png'></li>",
+                        "el3" : "<li><img src = 'img/Design sans titre.png'></li>"
+                    },
+                    "endlist" :"</ul>"
+                },
+                "end": "</div>"
             }
         },
 

@@ -75,90 +75,68 @@ function closeModal() {
     }
 }
 
-function buildGoal(projectGoal) {
-    const pg = projectGoal.title + projectGoal.description;
-    return pg;
-}
-
-function buildRealisationList(projectRealisationList) {
-    const prl = projectRealisationList;
-    let prlElements = "";
-    for (const elements in prl) {
-        prlElements += prl[elements];
+function buildInnerProjectListeHtml(Liste) {
+    let listeElements = "";
+    for (const elements in Liste)
+    {
+        listeElements += Liste[elements];
     }
-    return prlElements;
+    return listeElements;
 }
 
-function buildRealisation(projectRealisation) {
-    const pr = projectRealisation;
-    const title = pr.title;
-    const startlist = pr.startlist;
-    const elements = buildRealisationList(pr.elements);
-    const endlist = pr.endlist;
-    const realisation = title + startlist + elements + endlist;
-    return realisation;
-}
-
-function buildSkillsList(projectSkillsList) {
-    const psl = projectSkillsList;
-    let pslElements = "";
-    for (const elements in psl) {
-        pslElements += psl[elements];
+function buildInnerProjectHtml(InnerProjectElement, ElementKey) {
+    const ipe = InnerProjectElement;
+    let html = ""
+    if (!ipe)
+    {
+        console.error("ipe not valid", ipe)
     }
-    return pslElements;
-}
-
-function buildSkills(projectSkills) {
-    const ps = projectSkills;
-    const title = ps.title;
-    const startlist = ps.startlist;
-    const elements = buildSkillsList(ps.elements);
-    const endlist = ps.endlist;
-    const skills = title + startlist + elements + endlist;
-    return skills;
-}
-
-function buildUtilityList(projectUtilityList) {
-    const pul = projectUtilityList;
-    let pulElements = "";
-    for (const elements in pul) {
-        pulElements += pul[elements];
+    else if (!ElementKey)
+    {
+        console.error("element key not valid", ElementKey);
     }
-    return pulElements;
-}
-
-function buildUtility(projectUtility) {
-    const pu = projectUtility;
-    const title = pu.title;
-    const startlist = pu.startlist;
-    const elements = buildUtilityList(pu.elements);
-    const endlist = pu.endlist;
-    const utility = title + startlist + elements + endlist;
-    return utility;
+    else if (ElementKey == "start")
+    {
+        html = ipe;
+    }
+    else if(ElementKey == "projectname")
+    {
+        html = ipe;
+    }
+    else if (ElementKey == "goal")
+    {
+        const title = ipe.title;
+        const desc = ipe.description;
+        const result = title + desc;
+        html = result;
+    }
+    else if (ElementKey == "end")
+    {
+        html = ipe;
+    }
+    else
+    {
+        const title = ipe.title;
+        const startlist = ipe.startlist;
+        const elements = buildInnerProjectListeHtml(ipe.elements);
+        const endlist = ipe.endlist;
+        const result = title + startlist + elements + endlist;
+        html = result;
+    }
+    
+    console.log("Result = ", html, " with element key = ", ElementKey);
+    return html;
 }
 
 function buildProjectHtml(project) {
     const p = project;
     const ph = p.html;
-    const start = ph.start;
-    const projectname = ph.projectname;
-    const goal = buildGoal(ph.goal);
-    const realisation = buildRealisation(ph.realisation);
-    const skills = buildSkills(ph.skills);
-    const utility = buildUtility(ph.utility);
-    let image = "";
-    if (ph.image){
-        image = buildImage(ph.image)
+    let html = "";
+    for(const elements in ph)
+    {
+        html += buildInnerProjectHtml(ph[elements], elements);
     }
-    let video = "";
-    if (ph.video){
-        video = buildVideo(ph.video)
-    }
-    const end = ph.end;
-    const html = start + projectname + goal + realisation + skills + utility + end;
     return html;
-
-
 }
 
 function loadProjectData(projectId) {
