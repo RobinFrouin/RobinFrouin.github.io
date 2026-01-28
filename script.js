@@ -31,10 +31,15 @@ function openModal(card) {
 function closeModal() {
     let modal = document.getElementById('project-modal');
     let blurBackground = document.getElementById("modal-bg");
+    let modalDescription = document.getElementById("modal-description");
 
     modal.style.display = 'none';
     if (blurBackground) {
         blurBackground.remove();
+    }
+    if (modalDescription)
+    {
+        modalDescription.innerHTML = "";
     }
 }
 
