@@ -1,5 +1,5 @@
-// const MAINTENANCE_MODE = true ;
-const MAINTENANCE_MODE = false ;
+const MAINTENANCE_MODE = true ;
+// const MAINTENANCE_MODE = false ;
 
 document.addEventListener('DOMContentLoaded', function () {
     if (MAINTENANCE_MODE)
