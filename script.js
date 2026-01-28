@@ -38,6 +38,84 @@ function closeModal() {
     }
 }
 
+function buildGoal(projectGoal) {
+    const pg = projectGoal.title + projectGoal.description;
+    return pg;
+}
+
+function buildRealisationList(projectRealisationList) {
+    const prl = projectRealisationList;
+    let prlElements = "";
+    for (lements in prl) {
+        prlElements += elements;
+    }
+    return prlElements;
+}
+
+function buildRealisation(projectRealisation) {
+    const pr = projectRealisation;
+    const title = pr.title;
+    const startlist = pr.startlist;
+    const elements = buildRealisationList(pr.elements);
+    const endlist = pr.endlist;
+    const realisation = title + startlist + elements + endlist;
+    return realisation;
+}
+
+function buildSkillsList(projectSkillsList) {
+    const psl = projectSkillsList;
+    let pslElements = "";
+    for (elements in psl) {
+        pslElements += elements;
+    }
+    return pslElements;
+}
+
+function buildSkills(projectSkills) {
+    const ps = projectSkills;
+    const title = ps.title;
+    const startlist = ps.startlist;
+    const elements = buildSkillsList(ps.elements);
+    const endlist = ps.endlist;
+    const skills = title + startlist + elements + endlist;
+    return skills;
+}
+
+function buildUtilityList(projectUtilityList) {
+    const pul = projectSkillsList;
+    let pulElements = "";
+    for (elements in pul) {
+        pulElements += elements;
+    }
+    return pulElements;
+}
+
+function buildUtility(projectUtility) {
+    const pu = projectUtility;
+    const title = pu.title;
+    const startlist = pu.startlist;
+    const elements = buildUtilityList(pu.elements);
+    const endlist = pu.endlist;
+    const utility = title + startlist + elements + endlist;
+    return utility;
+}
+
+function buildProjectHtml(project) {
+    const p = project;
+    const ph = p.html;
+    const start = ph.start;
+    const projectname = ph.projectname;
+    const goal = buildGoal(ph.goal);
+    const realisation = buildRealisation(ph.realisation);
+    const skills = buildSkills(ph.skills);
+    const utility = buildUtility(ph.utility);
+    const end = ph.end;
+    const html = start + projectname + goal + realisation + skills + utility + end;
+    return html;
+
+
+}
+
 function loadProjectData(projectId) {
     fetch('https://robinfrouin.github.io/projects.json')
         .then(response => {
@@ -56,7 +134,7 @@ function loadProjectData(projectId) {
             let modalDescription = document.getElementById("modal-description");
 
             if (modalDescription) {
-                modalDescription.innerHTML = project.html;
+                modalDescription.innerHTML = buildProjectHtml(project);
             } else {
                 console.error("Modal elements not found!");
             }

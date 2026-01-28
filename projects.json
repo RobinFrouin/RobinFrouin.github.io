@@ -1,40 +1,376 @@
 {
-    "projects": {
-        "project1": {
-            "html": "<div class='project-container center'><h2 class='title-center'>Programmation Avancée</h2><h3 class='title-left'>But du projet :</h3><p>Développer un outil de stéganographie avec une interface utilisateur permettant de cacher et récupérer des données dans les couleurs d’une image Bitmap (.bmp).</p><h3 class='title-left'>Réalisation :</h3><ul class='text-left'><li>Encapsulation de la librairie Bitmap de Windows.</li><li>Création d’une interface utilisateur minimaliste pour manipuler les images.</li><li>Implémentation de fonctions pour charger, sauvegarder, écrire et lire des données dans les images.</li><li>Gestion du multithreading pour éviter le blocage de l’application pendant le traitement des images.</li></ul><h3 class='title-left'>Compétences acquises :</h3><ul class='text-left'><li>Encapsulation et utilisation de librairies C++.</li><li>Développement d’interfaces utilisateur avec la librairie UI de Windows.</li><li>Manipulation des couleurs RGB pour la stéganographie.</li><li>Gestion de la mémoire et optimisation des performances.</li></ul><h3 class='title-left'>Technologies utilisées :</h3><ul class='text-left'><li>C++, Windows Bitmap Library, Multithreading.</li></ul></div>",
-            "js": "console.log('Programmation Avancée Project Loaded');"
+  "projects": {
+    "project1": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>Advanced Programming</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Develop a steganography tool with a user interface to hide and retrieve data within the colors of a Bitmap (.bmp) image.</p>"
         },
-        "project2": {
-            "html": "<div class='project-container center'><h2 class='title-center'>Gestion de Balles avec Collisions</h2><h3 class='title-left'>But du projet :</h3><p>Créer une application Windows permettant de gérer des balles en mouvement avec collisions, compilée en versions GDI et SFML.</p><h3 class='title-left'>Réalisation :</h3><ul class='text-left'><li>Mise en place d’une architecture solide avec encapsulation des variables et fonctions globales.</li><li>Utilisation de la librairie GDI et SFML pour le rendu graphique.</li><li>Implémentation de textures BMP avec transparence et gestion des collisions.</li><li>Affichage des performances en temps réel (framerate, nombre de balles, etc.).</li></ul><h3 class='title-left'>Compétences acquises :</h3><ul class='text-left'><li>Encapsulation et gestion de la mémoire en C++.</li><li>Utilisation de directives de préprocesseur pour compiler différentes versions.</li><li>Optimisation des performances et gestion des ressources.</li></ul><h3 class='title-left'>Technologies utilisées :</h3><ul class='text-left'><li>C++, GDI, SFML.</li></ul></div>",
-            "js": "console.log('Gestion de Balles avec Collisions Project Loaded');"
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Encapsulation of the Windows Bitmap library.</li>",
+            "el2": "<li>Created a minimalist user interface to manipulate images.</li>",
+            "el3": "<li>Implemented features to load, save, write, and read data inside images.</li>",
+            "el4": "<li>Managed multithreading to prevent the application from freezing during image processing.</li>"
+          },
+          "endlist": "</ul>"
         },
-        "project3": {
-            "html": "<div class='project-container center'><h2 class='title-center'>Jeu de Rugby Simplifié avec IA</h2><h3 class='title-left'>But du projet :</h3><p>Développer un jeu de rugby simplifié en C++ avec SFML, où deux équipes d’IA s’affrontent.</p><h3 class='title-left'>Réalisation :</h3><ul class='text-left'><li>Implémentation de comportements d’IA basés sur des State Machines.</li><li>Gestion des interactions entre joueurs et du ballon.</li><li>Développement d’outils de debug pour tester différentes situations de jeu.</li></ul><h3 class='title-left'>Compétences acquises :</h3><ul class='text-left'><li>Programmation d’IA en C++.</li><li>Utilisation de State Machines pour structurer les comportements.</li><li>Développement d’outils de debug spécifiques.</li></ul><h3 class='title-left'>Technologies utilisées :</h3><ul class='text-left'><li>C++, SFML, State Machines.</li></ul></div>",
-            "js": "console.log('Jeu de Rugby Simplifié avec IA Project Loaded');"
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Encapsulation and use of C++ libraries.</li>",
+            "el2": "<li>Developed user interfaces using the Windows UI library.</li>",
+            "el3": "<li>RGB color manipulation for steganography.</li>",
+            "el4": "<li>Memory management and performance optimization.</li>"
+          },
+          "endlist": "</ul>"
         },
-        "project4": {
-            "html": "<div class='project-container center'><h2 class='title-center'>FPS Prototype sur Unity 3D</h2><h3 class='title-left'>But du projet :</h3><p>Créer un prototype de jeu FPS en solo avec des mécaniques de base et une direction artistique low poly.</p><h3 class='title-left'>Réalisation :</h3><ul class='text-left'><li>Implémentation des déplacements et interactions du joueur.</li><li>Création de systèmes de dégâts et d’IA pour les ennemis.</li><li>Développement de VFX et d’animations pour les armes et les ennemis.</li><li>Conception d’un level design simple avec ambiance sonore.</li></ul><h3 class='title-left'>Compétences acquises :</h3><ul class='text-left'><li>Développement de jeux vidéo avec Unity 3D.</li><li>Création de systèmes d’IA et de gameplay.</li><li>Utilisation de l’URP pour un rendu graphique optimisé.</li></ul><h3 class='title-left'>Technologies utilisées :</h3><ul class='text-left'><li>Unity 3D, C#, URP.</li></ul></div>",
-            "js": "console.log('FPS Prototype sur Unity 3D Project Loaded');"
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>C++, Windows Bitmap Library, Multithreading.</li>"
+          },
+          "endlist": "</ul>"
         },
-        "project5": {
-            "html": "<div class='project-container center'><h2 class='title-center'>Unity Shader et Feedback Visuels</h2><h3 class='title-left'>But du projet :</h3><p>Produire des shaders et intégrer des feedbacks visuels dans un jeu A-RPG stylisé.</p><h3 class='title-left'>Réalisation :</h3><ul class='text-left'><li>Création de shaders avec ShaderGraph et programmation en HLSL.</li><li>Intégration de feedbacks visuels (particules, effets de shader, etc.).</li><li>Développement d’un système de combat A-RPG dans une petite map stylisée.</li></ul><h3 class='title-left'>Compétences acquises :</h3><ul class='text-left'><li>Création et programmation de shaders avec Unity.</li><li>Intégration de feedbacks visuels pour enrichir l’expérience de jeu.</li><li>Développement de systèmes de combat et de gameplay.</li></ul><h3 class='title-left'>Technologies utilisées :</h3><ul class='text-left'><li>Unity, ShaderGraph, HLSL.</li></ul></div>",
-            "js": "console.log('Unity Shader et Feedback Visuels Project Loaded');"
+        "end": "</div>"
+      },
+      "js": "console.log('Advanced Programming Project Loaded');"
+    },
+    "project2": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>Ball Management with Collisions</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Create a Windows application to manage moving balls with collisions, compiled in both GDI and SFML versions.</p>"
         },
-        "project6": {
-            "html": "<div class='project-container center'><h2 class='title-center'>Unity UI</h2><h3 class='title-left'>Project Goal:</h3><p>Create an incremental or idle game inspired by the paperclip game, focusing on UI design and responsiveness.</p><h3 class='title-left'>Implementation:</h3><ul class='text-left'><li>Development of a 2D application with a map representing the factory and offices.</li><li>Creation of intuitive menus for managing the factory and marketing operations.</li><li>Implementation of gameplay mechanics for producing and selling paperclips.</li><li>Design of a responsive UI that adapts to different screen sizes.</li></ul><h3 class='title-left'>Skills Acquired:</h3><ul class='text-left'><li>Design and implementation of user interfaces in Unity.</li><li>Development of gameplay mechanics for idle games.</li><li>Creation of responsive and intuitive UI elements.</li></ul><h3 class='title-left'>Technologies Used:</h3><ul class='text-left'><li>Unity 2023, UI Toolkit.</li></ul></div>",
-            "js": "console.log('Unity UI Project Loaded');"
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Designed a solid architecture with proper encapsulation of variables and global functions.</li>",
+            "el2": "<li>Used GDI and SFML for rendering.</li>",
+            "el3": "<li>Implemented BMP textures with transparency and collision handling.</li>",
+            "el4": "<li>Displayed real-time performance metrics (framerate, number of balls, etc.).</li>"
+          },
+          "endlist": "</ul>"
         },
-        "project7": {
-            "html": "<div class='project-container center'><h2 class='title-center'>Unreal Engine Blueprint</h2><h3 class='title-left'>Project Goal:</h3><p>Develop a 3D first-person puzzle game using Unreal Engine 5.4.2 and Blueprint programming language.</p><h3 class='title-left'>Implementation:</h3><ul class='text-left'><li>Creation of puzzle elements using player inputs, raycasts, and collision detection.</li><li>Setup of a user interface to inform the player of their progress.</li><li>Technical documentation explaining the project structure and technical choices.</li></ul><h3 class='title-left'>Skills Acquired:</h3><ul class='text-left'><li>Mastery of Unreal Engine's Gameplay Framework.</li><li>Programming with Blueprint to create interactions and events.</li><li>Design of user interfaces in Unreal Engine.</li></ul><h3 class='title-left'>Technologies Used:</h3><ul class='text-left'><li>Unreal Engine 5.4.2, Blueprint.</li></ul></div>",
-            "js": "console.log('Unreal Engine Blueprint Project Loaded');"
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Encapsulation and memory management in C++.</li>",
+            "el2": "<li>Used preprocessor directives to compile different versions.</li>",
+            "el3": "<li>Performance optimization and resource management.</li>"
+          },
+          "endlist": "</ul>"
         },
-        "project8": {
-            "html": "<div class='project-container center'><h2 class='title-center'>Unreal Engine C++</h2><h3 class='title-left'>Project Goal:</h3><p>Create a 3D top-down game with enemies using Unreal Engine 5.4.2 and C++ programming.</p><h3 class='title-left'>Implementation:</h3><ul class='text-left'><li>Implementation of gameplay logic in C++, including NPC management and player interactions.</li><li>Development of advanced AI using AIController in C++.</li><li>Use of Behavior Trees to structure enemy behaviors.</li><li>Integration of AI Perception system for enemy detection and reaction to the player.</li><li>Creation of Task Nodes in C++ to define specific behaviors.</li><li>Encapsulation of AI in an abstract class to create different AIs with varying perception, speed, and behavior values.</li><li>Communication between C++ and Blueprint for advanced features.</li><li>Detailed technical documentation of the project structure and technical choices.</li></ul><h3 class='title-left'>Skills Acquired:</h3><ul class='text-left'><li>C++ programming in Unreal Engine.</li><li>Creation and management of AI behaviors with Behavior Trees and AI Perception.</li><li>Development of modules and plugins for Unreal Engine.</li><li>Memory management and performance optimization.</li><li>Design of flexible and reusable systems for different types of AI.</li></ul><h3 class='title-left'>Technologies Used:</h3><ul class='text-left'><li>Unreal Engine 5.4.2, C++, Visual Studio, AI Behavior Trees, AI Perception.</li></ul></div>",
-            "js": "console.log('Unreal Engine C++ Project Loaded');"
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>C++, GDI, SFML.</li>"
+          },
+          "endlist": "</ul>"
         },
-        "project9": {
-            "html": "<div class='project-container center'><h2 class='title-center'>Advanced Unreal Physics</h2><h3 class='title-left'>Project Goal:</h3><p>Reproduce an Angry Birds-style game in 3D using Unreal Engine 5.4.2 and the Chaos physics engine.</p><h3 class='title-left'>Implementation:</h3><ul class='text-left'><li>Implementation of gameplay logic in C++, including trajectories, impulses, and forces.</li><li>Use of the Chaos engine for physics management and dynamic destruction.</li><li>Documentation on the use of Unreal Engine's physics tools.</li></ul><h3 class='title-left'>Skills Acquired:</h3><ul class='text-left'><li>Mastery of the Chaos engine for physics simulation.</li><li>C++ programming of game mechanics.</li><li>Advanced use of particles and forces in Unreal Engine.</li></ul><h3 class='title-left'>Technologies Used:</h3><ul class='text-left'><li>Unreal Engine 5.4.2, C++, Chaos Engine, Niagara.</li></ul></div>",
-            "js": "console.log('Advanced Unreal Physics Project Loaded');"
-        }
+        "end": "</div>"
+      },
+      "js": "console.log('Ball Management with Collisions Project Loaded');"
+    },
+    "project3": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>Simplified Rugby Game with AI</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Develop a simplified rugby game in C++ with SFML, where two AI teams compete.</p>"
+        },
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Implemented AI behaviors based on state machines.</li>",
+            "el2": "<li>Managed interactions between players and the ball.</li>",
+            "el3": "<li>Developed debugging tools to test different gameplay situations.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>AI programming in C++.</li>",
+            "el2": "<li>Used state machines to structure behaviors.</li>",
+            "el3": "<li>Developed dedicated debugging tools.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>C++, SFML, State Machines.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "end": "</div>"
+      },
+      "js": "console.log('Simplified Rugby Game with AI Project Loaded');"
+    },
+    "project4": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>FPS Prototype sur Unity 3D</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Create a solo FPS prototype with core mechanics and a low-poly art direction.</p>"
+        },
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Implemented player movement and interactions.</li>",
+            "el2": "<li>Created damage systems and enemy AI.</li>",
+            "el3": "<li>Developed VFX and animations for weapons and enemies.</li>",
+            "el4": "<li>Designed a simple level with ambient sound.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Video game development with Unity 3D.</li>",
+            "el2": "<li>Creation of AI and gameplay systems.</li>",
+            "el3": "<li>Used URP for optimized rendering.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Unity 3D, C#, URP.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "end": "</div>"
+      },
+      "js": "console.log('FPS Prototype sur Unity 3D Project Loaded');"
+    },
+    "project5": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>Unity Shader et Feedback Visuels</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Produce shaders and integrate visual feedback in a stylized A-RPG game.</p>"
+        },
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Created shaders with Shader Graph and HLSL.</li>",
+            "el2": "<li>Integrated visual feedback (particles, shader effects, etc.).</li>",
+            "el3": "<li>Developed an A-RPG combat system in a small stylized map.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Shader creation and programming with Unity.</li>",
+            "el2": "<li>Integrated visual feedback to enhance the player experience.</li>",
+            "el3": "<li>Development of combat and gameplay systems.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Unity, Shader Graph, HLSL.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "end": "</div>"
+      },
+      "js": "console.log('Unity Shader et Feedback Visuels Project Loaded');"
+    },
+    "project6": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>Unity UI</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Create an incremental or idle game inspired by the paperclip game, focusing on UI design and responsiveness.</p>"
+        },
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Development of a 2D application with a map representing the factory and offices.</li>",
+            "el2": "<li>Creation of intuitive menus for managing the factory and marketing operations.</li>",
+            "el3": "<li>Implementation of gameplay mechanics for producing and selling paperclips.</li>",
+            "el4": "<li>Design of a responsive UI that adapts to different screen sizes.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Design and implementation of user interfaces in Unity.</li>",
+            "el2": "<li>Development of gameplay mechanics for idle games.</li>",
+            "el3": "<li>Creation of responsive and intuitive UI elements.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Unity 2023, UI Toolkit.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "end": "</div>"
+      },
+      "js": "console.log('Unity UI Project Loaded');"
+    },
+    "project7": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>Unreal Engine Blueprint</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Develop a 3D first-person puzzle game using Unreal Engine 5.4.2 and Blueprint programming language.</p>"
+        },
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Creation of puzzle elements using player inputs, raycasts, and collision detection.</li>",
+            "el2": "<li>Setup of a user interface to inform the player of their progress.</li>",
+            "el3": "<li>Technical documentation explaining the project structure and technical choices.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Mastery of Unreal Engine's Gameplay Framework.</li>",
+            "el2": "<li>Programming with Blueprint to create interactions and events.</li>",
+            "el3": "<li>Design of user interfaces in Unreal Engine.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Unreal Engine 5.4.2, Blueprint.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "end": "</div>"
+      },
+      "js": "console.log('Unreal Engine Blueprint Project Loaded');"
+    },
+    "project8": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>Unreal Engine C++</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Create a 3D top-down game with enemies using Unreal Engine 5.4.2 and C++ programming.</p>"
+        },
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Implementation of gameplay logic in C++, including NPC management and player interactions.</li>",
+            "el2": "<li>Development of advanced AI using AIController in C++.</li>",
+            "el3": "<li>Use of Behavior Trees to structure enemy behaviors.</li>",
+            "el4": "<li>Integration of AI Perception system for enemy detection and reaction to the player.</li>",
+            "el5": "<li>Creation of Task Nodes in C++ to define specific behaviors.</li>",
+            "el6": "<li>Encapsulation of AI in an abstract class to create different AIs with varying perception, speed, and behavior values.</li>",
+            "el7": "<li>Communication between C++ and Blueprint for advanced features.</li>",
+            "el8": "<li>Detailed technical documentation of the project structure and technical choices.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>C++ programming in Unreal Engine.</li>",
+            "el2": "<li>Creation and management of AI behaviors with Behavior Trees and AI Perception.</li>",
+            "el3": "<li>Development of modules and plugins for Unreal Engine.</li>",
+            "el4": "<li>Memory management and performance optimization.</li>",
+            "el5": "<li>Design of flexible and reusable systems for different types of AI.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Unreal Engine 5.4.2, C++, Visual Studio, AI Behavior Trees, AI Perception.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "end": "</div>"
+      },
+      "js": "console.log('Unreal Engine C++ Project Loaded');"
+    },
+    "project9": {
+      "html": {
+        "start": "<div class='project-container center'>",
+        "projectname": "<h2 class='title-center'>Advanced Unreal Physics</h2>",
+        "goal": {
+          "title": "<h3 class=\"title-left\">Project Goal:</h3>",
+          "description": "<p>Reproduce an Angry Birds-style game in 3D using Unreal Engine 5.4.2 and the Chaos physics engine.</p>"
+        },
+        "realisation": {
+          "title": "<h3 class=\"title-left\">Implementation:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Implementation of gameplay logic in C++, including trajectories, impulses, and forces.</li>",
+            "el2": "<li>Use of the Chaos engine for physics management and dynamic destruction.</li>",
+            "el3": "<li>Documentation on the use of Unreal Engine's physics tools.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "skills": {
+          "title": "<h3 class=\"title-left\">Skills Acquired:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Mastery of the Chaos engine for physics simulation.</li>",
+            "el2": "<li>C++ programming of game mechanics.</li>",
+            "el3": "<li>Advanced use of particles and forces in Unreal Engine.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "utility": {
+          "title": "<h3 class=\"title-left\">Technologies Used:</h3>",
+          "startlist": "<ul class='text-left'>",
+          "elements": {
+            "el1": "<li>Unreal Engine 5.4.2, C++, Chaos Engine, Niagara.</li>"
+          },
+          "endlist": "</ul>"
+        },
+        "end": "</div>"
+      },
+      "js": "console.log('Advanced Unreal Physics Project Loaded');"
     }
+  }
 }
